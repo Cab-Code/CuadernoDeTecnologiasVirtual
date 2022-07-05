@@ -1,11 +1,8 @@
 :root{
-
-    --primer:#08A57A ;
-    --segundo:#39AD30;
+    --primer:#CADA2A;
+    --segundo:#00A82D ;
     --tercero:#FFF;
-    --negro: #033D1A;
-
-
+    --negro: #000;
 }
 @font-face {
     font-family: 'amsi';
@@ -19,7 +16,6 @@
 a{
     text-decoration: none;
     color: var(--negro);
-
 }
 .meta{
     margin: 0;
@@ -33,11 +29,13 @@ body
 }
 header
 {
-    margin:2vh;
-    margin-top: 5vh;
+    margin:0;
+    padding: 2vh;
+    padding-top: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 10px 10px #888888;
 }
 .header__title
 {
@@ -58,15 +56,32 @@ header
 .mainContainer__tecnology
 {
     background-color: var(--primer);
-    padding: 7vw;
+    padding: calc(2.5vh + 4vw);
     margin:-webkit-calc(1.5vh + 1vw);
     color: var(--negro);
+    box-shadow: 0px 10px 10px #888888;
+    transition: 0.7s;
+
+}
+.select{
+    
+    background-color: var(--tercero);
+    outline: none;
+    border: var(--segundo) solid 1px;
+    color: var(--segundo);
+    padding: 10px;
+}
+option{
+    padding: 30px;
+    margin: 10em;
+    font-size: -webkit-calc(1.5vh + 2vw / 2);
+}
+.mainContainer__tecnology:hover
+{
+    margin: -webkit-calc(0.5vh + 0.5vw);
 }
 .mainContainer__tecnology:last-child
 {
-    background-color: var(--primer);
-    padding: 7vw;
-    margin-bottom: 10vh;
     color: var(--negro);
 }
 
@@ -78,7 +93,10 @@ footer{
     box-sizing: border-box;
 
 }
-.footer_text
+/*
+------Optimizar para Surface pro 7 el tamaño de letra
+*/
+.footer__text
 {
-    font-size: calc(1vh * 1vw);
+    font-size: calc(1.5vh * 1.5vw);
 }
