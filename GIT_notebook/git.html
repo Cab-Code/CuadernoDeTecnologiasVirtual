@@ -4,35 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="git.css">
     <title>GIT</title>
 </head>
 <body>
     <header>
-        
-        <img src="svg_git.svg" alt="" class="header__logo">
-        <h1>GIT y GitHub</h1>
-        <img src="svg_github.svg" alt="" class="header__logo">
+        <div class="header__title">
+            <img src="svg_git.svg" alt="" class="header__logo">
+            <h1>GIT y GitHub</h1>
+            <img src="svg_github.svg" alt="" class="header__logo">
+        </div>
     </header>
     <main class="main">
-        <h2>GIT</h2>
-        <div class="explicacion">
+        <div class="git">
+            <h2>GIT</h2>
+            <div class="explicacion">
             GIT se utiliza para controlar las versiones de tus programas. 
             Es un "Sistema de control distribuido". Ayuda a navegar a travez 
             de las versiones de tu proyecto tambien permite revertir los 
             cambios y crear Snapshots
 
+            </div>
         </div>
-        <div class="main__grafic1">
+        <div class="gitHub">
+            <h2>GitHub</h2>
+            <div class="explicacion"> 
+            GitHub es un servicio basado en la nube que aloja un sistema 
+            de control de versiones (VCS) llamado Git. Éste permite a los 
+            desarrolladores colaborar y realizar cambios en proyectos 
+            compartidos, a la vez que mantienen un seguimiento detallado 
+            de su progreso.
+            </div>
+        </div>
+        <div class="main__grafic">
             <div class="grafic1__gitInit comands">git init</div>
             <div class="grafic1__areas">Working directory</div>
             <div class="grafic1__gitAdd comands">git add</div>
             <div class="grafic1__areas">Staging area</div>
             <div class="grafic1__gitCommit comands">git commit</div>
             <div class="grafic1__areas">Repository</div>
+            <div class="grafic1__gitPush comands">git push</div>
+            <div class="grafic1__areas remote">Remote repository</div>
 
         </div>
         <div class="main__comands">
+            <h2>Comandos</h2>
             <table>
                 <thead>
                 <tr> <td> Comando </td> <td>Explicacion</td> </tr>
@@ -44,16 +60,8 @@
             </table>
 
         </div>
-        <h2>GitHub</h2>
-        <div class="explicacion"> 
-            GitHub es un servicio basado en la nube que aloja un sistema 
-            de control de versiones (VCS) llamado Git. Éste permite a los 
-            desarrolladores colaborar y realizar cambios en proyectos 
-            compartidos, a la vez que mantienen un seguimiento detallado 
-            de su progreso.
-        </div>
-        <div class="main__grafic1"></div>
-        <div class="main__comands"></div>
+
+
     </main>
 
 </body>
