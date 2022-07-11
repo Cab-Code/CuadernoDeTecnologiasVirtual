@@ -49,18 +49,45 @@
         </div>
         <div class="main__comands">
             <h2>Comandos</h2>
+        <div class = "comands__table">
             <table>
                 <thead>
                 <tr> <td> Comando </td> <td>Explicacion</td> </tr>
                 </thead>
-                <tr> <td><em>git init</em></td> <td>Inicia git en nuestra carpeta. Es el primer coomando que debemos escribir para luego poder utilizar el resto</td> </tr>
-                <tr> <td><em>git add</em></td> <td>este commando pasa los archivos que nombremos del working directory al staging area. <br> Tambien podemos utilizar <em> git add .</em> para pasar todos los archivos de la carpeta del working directory al stagging area </td> </tr>
-                <tr> <td><em>git status</em></td> <td>Este comando nos muestra el estado actual de nuestra version los documentos del Working directory y los del staging area</td> </tr>
-                <tr> <td><em>git commit</em></td> <td>Este comando nos muestra el estado actual de nuestra version los documentos del Working directory y los del staging area</td> </tr>
-            </table>
+                <tbody>
+                    <tr> <td><em>git init</em></td> <td>Inicia git en nuestra carpeta. Es el primer coomando que debemos escribir para luego poder utilizar el resto</td> </tr>
+                    <tr> <td><em>git add</em></td> <td>este commando pasa los archivos que nombremos del working directory al staging area. <br> Tambien podemos utilizar <em> git add .</em> para pasar todos los archivos de la carpeta del working directory al stagging area </td> </tr>
+                    <tr> <td><em>git status</em></td> <td>Este comando nos muestra el estado actual de nuestra version los documentos del Working directory y los del staging area</td> </tr>
+                    <tr> <td><em>git commit</em></td> <td>Este comando nos muestra el estado actual de nuestra version los documentos del Working directory y los del staging area</td> </tr>
+                    <tr> <td><em>git push</em></td> <td>Se utiliza para subir el codigo a un sitio remoto</td> </tr>
+                    <tr> <td><em>git pull</em></td> <td>Si se trabaja con otros desarrolladores trae los cambios echos por los mismos</td> </tr>
+                    <tr> <td><em>git clone</em></td> <td>Este trae una copia del servidor central a tu ordenador y despues puedes trabajar en el</td> </tr>
+                    <tr> <td><em>pwd</em></td> <td>Muestra el directorio donde estamos trabajando. La ruta denuestro sistema esta posicionando el terminal</td> </tr>
+                    <tr> <td><em>ls</em></td> <td>Se utiliza para listar directorios y archivos</td> </tr>
+                    <Tr><td class="coment">Comentario</td><td class="coment">para utilizar el commit <em>git commit</em> primero se debe confiurar el usuario desde el que vamos a estar trabajando en el git. Para ello se utilizan los siguientes codigos</td></Tr>
+                    <tr> <td><em>git config</em></td> <td>Es una funcion util que sirve para definir valores de configuracion de Git a nivel de un proyecto global</td> </tr>
+                    <tr> <td><em>git config --global user.email </em></td><td> Este se utiliza para asociar un email al usuario que realizo cambios en el codigo. El correo para asociar se escribe luego del comando entre commillas <em>"usuario@gmail.com"</em></td> </tr>
+                    <tr> <td><em>git config --global user.name</em></td> <td> Este asocia un nombre al usuario que modifica el codigo. El usuario a asociar se coloca entre comillas <em>"usuario"</em></td> </tr>
+                    <tr> <td><em>git log</em></td> <td>Nos muestra los commits que hemos realizado y en el se encuentra el hash de cada version o Snapshot </td> </tr>
+                    <tr> <td><em>git checkout --namefile</em></td><td>sirve para revertir los cambios de los archivos</td></tr>
+                    <tr> <td><em>git diff nameFile</em></td><td>Muestra las diferencias en el archivo desde la ultima snapshot</td></tr>
+                    <tr> <td><em>git ignore</em></td><td> Para ignorar documentos o carpetas se crea un archivo llamado "git ignore" y en este se listan todos los archivos que se desea ignorar </td></tr>
+                    <tr> <td><em>git branch</em></td><td> Nos muestra las ramas o versiones alternativas de nuestro codigo </td></tr>
+                    <tr> <td><em>git branch nomBranch</em></td><td>Crea una nueva branch o rama </td></tr>
+                    <tr> <td><em>git checkout nomBranch</em></td><td>Nos permite cambiar la rama o version paralela en la que estamos trabajando </td></tr>
+                    
+                </tbody>
+                </table> 
 
         </div>
 
+        </div>
+        <div class="explicacion"> 
+                <h2>¿Que es un hash?</h2>
+            Es un valor calculado a partir de un valor diferente. 
+            Un hash tiene el mismo tamaño siempre 40 caracteres. (lo 
+            que equivale 160 bits)
+            </div>
 
     </main>
 

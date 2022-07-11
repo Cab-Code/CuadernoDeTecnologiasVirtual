@@ -10,7 +10,8 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+header
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +20,8 @@ header{
     background-color: var(--blanco);
     box-shadow: 0px 10px 10px #888888;
 }
-h2{
+h2
+{
     margin:1.5vh 0;
 }
 .header__title
@@ -27,7 +29,6 @@ h2{
     margin: 5vh;
     margin-top: 7vh;
     font-size: calc(1.2vh + 1.2vw);
-
 }
 .header__logo
 {
@@ -35,10 +36,12 @@ h2{
     display: inline;
     margin: 1vw;
 }
-h1{
+h1
+{
     display: inline;
 }
-.main{
+.main
+{
     margin: 10vw;
     margin-top: calc(2.5vh + 2.5vw);
     display: flex;
@@ -55,11 +58,11 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .grafic1__gitInit, .grafic1__gitPush
 {
     margin: 4vh;
+    font-style: italic;
     align-self: center;
 }
 .grafic1__areas
@@ -70,35 +73,51 @@ h1{
     align-self: center;
     border: var(--segundo) solid 2px;
     font-weight: 700;
-}
-.grafic1__areas::before
-{
-    content:'a';
-    background-color: var(--negro);
-    height: 1vh;
-    width: 2vw;
-}
-.remote::before{
-    content:'';
-    display:flex;
-    height: 10vh;
-    width: 10vh;
-    border-radius: 50%;
-    z-index: 50;
-    position: relative;
-    box-sizing: content-box;
-    align-self: center;
-    z-index: -1;
-    margin: 1vh 5vh -6.5vh 5vh;
-    background-color: #5E6AFC;
-    border: var(--primero) solid 2px;
 
 }
 .remote{
-    background-color: transparent;
-    border: none;
+    background-color: var(--segundo);
+    border: var(--primero) solid 2px;
+    border-radius: 10%;
 
+}
+.comands__table{
+    background-color: var(--primero);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.comands
+{
+    text-decoration: underline;
+}
+table{
+    margin: 1vw;
+    background-color: var(--primero);
+    border-collapse: collapse;
+    border:solid var(--negro) 2px;
 
 }
 
-
+tr{
+    border:solid var(--negro) 2px;
+}
+td{
+   /* border:solid var(--negro) 2px;*/
+    padding:2vw;
+    background-color: var(--blanco);    
+}
+thead td{
+    background-color: var(--segundo);
+    text-align: center;
+}
+tbody td:first-child{
+    background-color: var(--primero);
+}
+.coment:first-child{
+    background-color: var(--segundo) !important;
+}
+.explicacion
+{
+    margin: 2vh 0;
+}
