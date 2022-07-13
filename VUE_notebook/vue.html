@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloPrincipal.css">
+    <title>VUE.JS</title>
+</head>
+<body>
+    <header>
+        <img src="vue.svg" alt="">
+    </header>
+    <main>
+        <div class="intoduccion">
+            <p>
+                Vue.js Es un framework de javascript es ideal 
+            para empezar a aprender framewoks. Para poder 
+            desarrollarse y aprender Vue.js es necesario conocer 
+            javascript o almenos sus bases.
+            </p>
+            <p>
+             <a href="https://vuejs.org/guide/introduction.html">>Documentacion oficial<</a>
+            </p>
+            <p>
+                para trabajar con vue tenemos dos formas de instalacion con cmd 
+                o con CLI
+                <br>
+                cmd:
+                <br>
+                <output> -npm init vue@latest
+                    <br>
+                    -cd "proyect name" <br>
+                    -npm install <br>
+                    -npm run dev
+                </output>
+                <br>
+                Para utilizar Vue CLI se necesita node.js
+            </p>
+            <p>
+                CDN: 
+                <br>
+                <output><span sp_simbol> <</span><span class="sp_element">script</span><span sp_simbol> > </span> src= <span class="sp_link">"https://unpkg.com/vue@3"</span> <span sp_simbol> <</span> <span class="sp_element"> /script </span> <span sp_simbol> > </span></output>
+            </p>
+            <p>
+                cuando trabajamos con VUe debemos de colocar los elemntos
+                que deseamos trabajar dentro de un container con una determinada 
+                id <em>id = 'app'</em> a la que se le puede dar cualquier nombre.
+                Para trabajar con Vue trabajamos con <span sp_simbol> <</span><span class="sp_element">script</span><span sp_simbol> > </span> 
+
+            </p>
+        </div>
+        <p>
+            Todas las aplicaciones de vue empiezan con la funcion 
+            <span class="codex"> createApp()</span> y estas necesitan un componente 
+            root:
+            <br>
+            La app la devemos montar en un containercon el comando <span class="codex">.mount(IDcontainer)</span> esto se lo ponemos a la app 
+            para llamar a una funcionalidad vue usamos <span class="codex">Vue.</span>funcionalidadDeVue
+            <br>
+            si el root no tiene una opcion de template el <span class="codex">.mount()</span> 
+            va usar el innerHTMl del contenedor automaticamente
+            <br>
+            El siguiente ejemplo muestra como montar una app simple en vue
+            <br>
+            <a href="ejemplos/01_vue.js"> ejemplo</a>
+            <p>
+                La reactividad de Vue hace referencia a que al cambiar valores estos se actualizan en los componentes asociados
+            </p>
+            <p>
+                Tambien tenemos el :
+                <span class="codex"> .config</span>que nos permite configurar 
+                algunas opciones de la aplicacion como definir un captador de errores 
+                <a href="ejemplos/02_vue.js">ejemplo</a>
+            </p>
+            <p>
+                el return de nuestra app sirve para retornar las propiedades 
+                y sus valores a contenedor de la app que es donde la montamos
+                <br>
+                <output> <span class="codex">retun</span> {
+                    <br>
+                    <span class="sp_prop"> propiedad:</span> <span class="sp_string"> 'valor'</span>
+                    <br>
+                    <span class="sp_prop"> propiedad:</span> <span class="sp_string"> 'valor'</span>
+                    <br>
+                    <span class="sp_prop"> propiedad:</span> <span class="sp_string"> 'valor'</span>
+                    <br>
+                }
+                
+                </output>
+            </p>
+            <p>
+                Las instancias de la aplicacion tambien nos 
+                permiten algunos metodos para registrar activos en el ambito 
+                de la aplicacion <br> por ejemplo registrar un componente <br> 
+                <output> nombreApp<span class="codex">.component(<span class="sp_string">'toDeleteButton'</span>, toDeleteButton)</span></output>
+            </p>
+        </p>
+        <h2>Ciclo de vida de una aplicacion</h2>
+        <br>
+        <p>
+            
+        </p>
+    </main>
+    
+    
+</body>
+</html>
