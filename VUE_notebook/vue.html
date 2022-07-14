@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloPrincipal.css">
-    <title>VUE.JS</title>
+    <link rel="stylesheet" href="vue.css">
+    <title>Vue.js</title>
 </head>
 <body>
     <header>
@@ -99,7 +99,48 @@
         <h2>Ciclo de vida de una aplicacion</h2>
         <br>
         <p>
+            <h4>metodos relacionados al ciclo de vida</h4>
             
+            <ul>
+                <li><span class="codex">beforeCreated(){}</span></li>
+                <li><span class="codex">created(){}</span></li>
+                <li><span class="codex">beforeMount(){}</span></li>
+                <li><span class="codex">mounted(){}</span></li>
+                <li><span class="codex">beforeUpdate(){}</span></li>
+                <li><span class="codex">updated(){}</span></li>
+                <li><span class="codex">beforeUnmount(){}</span></li>
+                <li><span class="codex">unmonted(){}</span></li>
+
+            </ul>
+            <a href="ejemplos/03_vue.js">ejemplo</a>
+            <br>
+            <br>
+        Antes de montar laaplicacion aun no existen las etiquetas 
+        html dentro de la app
+        </p>
+        <p>
+            se utiliza el <span class="codex">this</span> para las propiedades 
+            de la aplicacion al llamarlas fuera del <span class="codex">data(){}</span> 
+
+        </p>
+        <p>
+            <h3>metodos</h3>
+            estos son otras funciones de nuestra app <br>
+            <span class="codex"> metods(){ <br>codigo <br> } </span> <br>
+            <a href="ejemplos/04_vue.js">ejemplo</a>
+            <br>
+            <a href="ejemplos/05_vue.js">ejemplo 2</a>
+            <br>
+            El metodo debe escribirse: <br>
+            
+            <output> <span class="codex">nombreMetodo </span><span class="sp_simbol">:</span>{ <br> <span class="sp_coment">//codigo</span> <br> }</output>
+            </span>
+        </p>
+        <h3>template</h3>
+        <p>
+            para vincular datos del <span class="codex"> return </span> al elemento HTML 
+            usamos el mostache doble <span class="codex">{{dato}}</span>
+            es igual a <span class="codex">.innerText</span> o el v-bind
         </p>
     </main>
     

@@ -1,0 +1,14 @@
+:root{
+
+}
+*{
+
+}
+.codex{
+    font-style: italic;
+    color: orangered;
+}
+output{
+    background-color: rgb(190, 190, 190);
+    display:block;
+}
